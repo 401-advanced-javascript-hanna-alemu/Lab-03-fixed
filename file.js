@@ -1,6 +1,5 @@
 'use strict';
 
-const fs = require('fs');
 const fse = require('fs-extra');
 
 class FileManager {
@@ -27,10 +26,10 @@ class FileManager {
 
   readFilePromises(fileName){
     return fse.readFile(fileName);
-}
+  }
 
   writeFilePromises(fileName, data){
-      return fse.writeFile(fileName, data);
+    return fse.writeFile(fileName, data);
   }
 
 }
